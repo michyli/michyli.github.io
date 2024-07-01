@@ -145,3 +145,11 @@ function OnInput() {
   this.style.height = 'auto';
   this.style.height = (this.scrollHeight) + "px";
 }
+
+/* Course Taken Accordion */
+const coursetaken = document.querySelectorAll(".course-list") 
+coursetaken.forEach(cour => {
+  cour.addEventListener("click", () => {
+    cour.classList.toggle("active")
+  })
+}) 
