@@ -1,0 +1,25 @@
+:root {
+    --primary-color: rgb(237, 254, 236);
+    --secondary-color: rgb(193, 212, 176);
+    --tertiary-color: rgb(242, 247, 202);
+    --quaternary-color: rgb(209, 216, 192);
+    --accent-color: rgb(229, 115, 97);
+    --decor-color:  rgb(231, 152, 136);
+    --subfont-color: rgb(54, 72, 89);
+    --dark-color: rgb(41, 41, 41);
+    --dark-rgb-value: 41, 41, 41;
+  
+    --gradient-color: linear-gradient(90deg, var(--decor-color), var(--accent-color));
+  }
+
+  body.dark {
+    --primary-color: rgb(30, 30, 36);
+    --secondary-color: rgb(52, 51, 50);
+    --tertiary-color: rgb(32, 34, 28);
+    --quaternary-color: rgb(42, 45, 38);
+    --accent-color: rgb(229, 115, 97);
+    --decor-color: rgb(231, 152, 136);
+    --subfont-color: rgb(236, 234, 233);
+    --dark-color: rgb(255, 248, 240);
+    --dark-rgb-value: 255, 248, 240;
+  }

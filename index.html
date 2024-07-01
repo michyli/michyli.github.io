@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Li's Website</title>
+    <meta name="author" content="Michael Li">
+    <meta
+      name="description"
+      content="I am an undergrad at UC Berkeley from Shanghai and Montreal, and this is my personal website!">
+    <link rel="icon" href="/assets/li-logo.png">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+    <link rel="stylesheet" type=“text/css” href="./style.css">
+    <link rel="stylesheet" type=“text/css” href="./mediaqueries.css">
+    <link rel="stylesheet" type=“text/css” href="./color-palette.css">
+  </head>
+  <body class="no-scroll">
+    <!-- Navigation Bar -->
+    <section class="starting-page">
+      <header>
+        <div class="header container">
+          <nav class="navbar">
+            <ul>
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="./pages/about.html">About</a></li>
+              <li><a href="./pages/projects.html">Projects</a></li>
+              <li><a href="./pages/blog.html">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="ld-theme">
+            <button type="button" class="toggle"></button>
+          </div>
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <div class="dark-part"></div>
+        </div>
+      </header>
+    
+      <!-- PROFILE PAGE -->
+      <div class="profile-section">
+        <div class="profile-text-container" >
+          <div class="profile-text-wrapper hiddenstay">
+            <p class="profile-text1">Hi, I am</p>
+          </div>
+          <div class="profile-text-wrapper hiddenstay">
+            <h1 class="profile-title">Michael Li</h1>
+          </div>
+          <div class="profile-text-wrapper second-anim hiddenstay">
+            <p class="profile-text2">I'm an Undergrad at <span class="indiv-char">UC Berkeley</span> who loves hardware / software optimizations and tinkering.</p>
+          </div>
+        </div>
+        <div class="btn-container-larger">
+          <div class="profile-btn-container">
+            <a href="#" class="button second-anim hiddenstay" onclick="scrolltobottom()">
+              <div class="prof-btn1">
+                <span class="btn-text">Contact</span>
+                <i class="ri-mail-send-line btn-icon"></i>
+                <div class="button-reflection1"></div>
+                <div class="button-reflection2"></div>
+              </div>
+              <img src="./assets/chatbox.png" alt="" class="button__star-1 btn__decor">
+              <img src="./assets/sparkle.png" alt="" class="button__star-2 btn__decor">
+              <img src="./assets/sparkle.png" alt="" class="button__circle-1 btn__decor">
+              <img src="./assets/bell.png" alt="" class="button__circle-2 btn__decor">
+              <img src="./assets/at.png" alt="" class="button__diamond btn__decor">
+              <img src="./assets/coffee.png" alt="" class="button__triangle btn__decor">
+              <div class="button-shadow"></div>
+            </a>
+
+            <a href="https://read.cv/michaelli" class="button second-anim hiddenstay">
+              <div class="prof-btn2">
+                <span class="btn-text">Overview</span>
+                <i class="ri-article-line btn-icon"></i>
+                <div class="button-reflection1"></div>
+                <div class="button-reflection2"></div>
+              </div>
+
+              <img src="./assets/star.png" alt="" class="button__star-1">
+              <img src="./assets/star.png" alt="" class="button__star-2">
+              <img src="./assets/circle.png" alt="" class="button__circle-1">
+              <img src="./assets/circle.png" alt="" class="button__circle-2">
+              <img src="./assets/diamond.png" alt="" class="button__diamond">
+              <img src="./assets/triangle.png" alt="" class="button__triangle">
+
+              <div class="button-shadow"></div>
+            </a>
+          </div>
+        </div>      
+      </div>
+      <div class="down-arrow-wrapper">
+        <div class="wavy-scroll">
+          <span class="hiddenstay" style="--i:1;">S</span>
+          <span class="hiddenstay" style="--i:2;">C</span>
+          <span class="hiddenstay" style="--i:3;">R</span>
+          <span class="hiddenstay" style="--i:4;">O</span>
+          <span class="hiddenstay" style="--i:5;">L</span>
+          <span class="hiddenstay" style="--i:6;">L</span>
+        </div>
+        <img src="./assets/down-double-arrow.png" alt="" class="down-arrow hiddenstay">
+      </div>
+    </section>
+
+    <div class="spacer trans-curve-1"></div>
+    
+    <!-- About Me Page -->
+    <section class="about-me-page">
+      <div class="am-header container">
+        <div class="intro-container">
+          <div class="title-text hidden">
+            <h1>A little bit about me 
+              <span class="prof-emoji">
+                <i class="em em-smiley"></i>
+              </span>
+            </h1>
+          </div>
+          <div class="body-text">
+            <p class="bmp-para hidden">
+              I'm a student at UC Berkeley intending a Mechanical Engineering and Computer Science simulaneous degree.
+              I enjoy the process to create, iterate, and optimize, both hardwares and softwares.
+            </p>
+            <!-- Learn More Button -->
+            <div class="lm-container bmp-para hidden">
+              <a href="/pages/about.html" class="lm-btn">
+                <span class="lm-circle">
+                  <span class="lm-icon lm-arrow"></span>
+                </span>
+                <span class="lm-text">Learn More</span>
+              </a>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="social-media bmp-para hidden">
+              <div class="sm-wrapper">
+                <a href="https://github.com/michyli"><div class="sm-button github hidden">
+                  <div class="sm-icon">
+                    <i class="ri-github-fill"></i>
+                  </div>
+                  <span>Github</span>
+                </div></a>
+                <a href="https://www.linkedin.com/in/michyli/"><div class="sm-button linkedin hidden">
+                  <div class="sm-icon">
+                    <i class="ri-linkedin-box-fill"></i>
+                  </div>
+                  <span>LinkedIn</span>
+                </div></a>
+                <a href="https://www.instagram.com/lyz._.li/"><div class="sm-button insta hidden">
+                  <div class="sm-icon">
+                    <i class="ri-instagram-line"></i>
+                  </div>
+                  <span>Instagram</span>
+                </div></a>
+                <a href="mailto:michael_li@berkeley.edu?subject=Hi Michael, I'd like to reach out."><div class="sm-button email hidden">
+                  <div class="sm-icon">
+                    <i class="ri-mail-line"></i>
+                  </div>
+                  <span>Email</span>
+                </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ring-wrapper">
+        <div class="ring hidden">
+          <i class="rot-ring" style="--clr:#E8EBF7;"></i>
+          <i class="rot-ring" style="--clr:#ACBED8;"></i>
+          <i class="rot-ring" style="--clr:#F2D398;"></i>
+
+          <div class="prof-slider-wrapper">
+            <div class="prof-slider">
+              <img id="slider-1" src="./assets/profile-pic-1.jpg" alt="" class="profile-pic">
+              <img id="slider-2" src="./assets/profile-pic-2.jpeg" alt="" class="profile-pic">
+              <img id="slider-3" src="./assets/profile-pic-3.jpg" alt="" class="profile-pic">
+              <img id="slider-4" src="./assets/profile-pic-4.jpg" alt="" class="profile-pic">
+              <img id="slider-5" src="./assets/profile-pic-5.jpg" alt="" class="profile-pic">
+            </div>
+            <div class="slider-nav">
+              <a href="#slider-1"></a>
+              <a href="#slider-2"></a>
+              <a href="#slider-3"></a>
+              <a href="#slider-4"></a>
+              <a href="#slider-5"></a>
+            </div>
+            <p>scroll
+              <i class="ri-arrow-right-double-fill"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="spacer trans-curve-2"></div>
+
+    <section class="work-experience-page">
+      <div class="we-header container">
+        <div class="timeline-container">
+          <ul class="timeline hidden">
+            <!-- Item 1 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="flag">KiDrone</span>
+                  <span class="time-wrapper"><span class="time">2024 Summer</span></span>
+                </div>
+                  <p class="desc">Design and implemented a full-field coverage flight path planner algorithm for unmanned military-grade drone from scratch to finish.
+                    <br><br> Python | ArcGIS | PyTorch | Matplotlib
+                  </p>
+              </div>
+            </li>
+            <!-- Item 2 -->
+            <li>
+              <div class="direction-l">
+                <div class="flag-wrapper">
+                  <span class="flag">Formula Electric at Berkeley</span>
+                  <span class="time-wrapper"><span class="time">2023 - present</span></span>
+                </div>
+                <p class="desc">Worked as a R&D engineer for a ~600V 21700 Li-ion custom battery pack.
+                  Designed an optimization algorthm to maximize pack efficiency and power draw.
+                  <br><br> SolidWorks | Python | Matlab
+                </p>
+              </div>
+            </li>
+            <!-- Item 3 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="flag">UC Berkeley</span>
+                  <span class="time-wrapper"><span class="time">2023 - 2027</span></span>
+                </div>
+                <p class="desc">Intending Mechanical Engineering and Computer Science simultaneous degree.
+                  <br><br> 3.9 / 4.0
+                </p>
+              </div>
+            </li>
+            <!-- EXAMPLE OF NEXT ITEM -->
+            <!-- NOTE: If there are more items than page height, change .work-experience-page height:100vh to more than 100vh -->
+            <!-- <li>
+              <div class="direction-l">
+                <div class="flag-wrapper">
+                  <span class="flag">Apple Inc.</span>
+                  <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+                </div>
+                <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+              </div>
+            </li> -->
+
+            
+          </ul>
+        </div>
+        <div class="exp-container">
+          <div class="exp-title hidden">
+            <h1>My Experiences
+              <span>
+                <i class="em em-muscle" aria-role="presentation" aria-label="FLEXED BICEPS"></i>
+              </span>
+            </h1>
+          </div>
+          <div class="exp-body-text">
+            <p class="hidden">
+              I enjoy doing works related to optimization and design. 
+              and I am experienced at taking a project from research to implementation.
+            </p>
+            <p class="hidden">
+              I also love tinkering projects in a variety of fields. 
+              From robotic kinematics to neural networks, I enjoy digging into the <span>why</span> and finding out the <span>how</span>.
+            </p>
+          </div>
+          <div class="lm-container exp-btn-container hidden">
+            <a href="/assets/Resume-Michael-Li.pdf" target="_blank" class="lm-btn">
+              <span class="lm-circle">
+                <span class="lm-icon lm-arrow"></span>
+              </span>
+              <span class="lm-text">Resume PDF</span>
+            </a>
+          </div>
+          <div class="lm-container exp-btn-container hidden">
+            <a href="/assets/Portfolio-Michael-Li.pdf" target="_blank" class="lm-btn">
+              <span class="lm-circle">
+                <span class="lm-icon lm-arrow"></span>
+              </span>
+              <span class="lm-text">Proj. Portfolio</span>
+            </a>
+          </div>
+          <p class="last-updated hidden">Last updated May 10, 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer trans-curve-3"></div>
+
+    <section class="page-end">
+      <div class="ct-header container">    
+        <div class="contact-container">
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            
+            <div class="contact-title hidden">
+              <h2>Get in touch</h2>
+              <hr>
+            </div>
+            <input type="hidden" name="access_key" value="2e5483ec-2cfb-4ca8-9b97-082ebabae275">
+            <input type="hidden" name="subject" value="New form received from Personal Website">
+            <input type="text" name="name" placeholder="Your Full Name" class="contact-inputs hidden" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs email-input hidden" required>
+            <textarea name="message" placeholder="Leave a message!" class="contact-inputs hidden" required></textarea>
+            <button type="submit" class="contact-button hidden">
+              <span>Submit</span>
+              <div class="success">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+                  <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
+                </svg>
+              </div>
+            </button>
+            
+          </form>
+        </div>
+        
+        <div class="backtotop-wrapper hidden">
+          <div class="backtotop"><i class="ri-arrow-up-line"></i></div>
+        </div>  
+      </div>
+    </section>
+    
+    <footer>
+      <p>Copyright &#169; <script>new Date().getFullYear()>2017&&document.write(new Date().getFullYear());</script> Michael Li. All Rights Reserved.</p>
+    </footer>
+
+    <!-- END OF GENERAL -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

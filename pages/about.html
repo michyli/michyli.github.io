@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Li's Website</title>
+    <meta name="author" content="Michael Li" />
+    <meta
+      name="description"
+      content="I am an undergrad at UC Berkeley from Shanghai and Montreal, and this is my personal website!"
+/>
+    <!-- <link rel="icon" href="TAB ICON FILE LOCATION"> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+    <link rel="stylesheet" type=“text/css” href="./style-about.css">
+    <link rel="stylesheet" type=“text/css” href="./mediaqueries.css">
+    <link rel="stylesheet" type=“text/css” href="./color-palette.css">
+  </head>
+  <body class="no-scroll">
+    <!-- Navigation Bar -->
+    <section class="starting-page">
+      <header>
+        <div class="header container">
+          <nav class="navbar">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./pages/about.html" class="active">About</a></li>
+              <li><a href="./pages/projects.html">Projects</a></li>
+              <li><a href="./pages/blog.html">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="ld-theme">
+            <button type="button" class="toggle"></button>
+          </div>
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <div class="dark-part"></div>
+        </div>
+      </header>
+
+      
+
+      <div class="about-text-container hidden">
+        <!-- First Section -->
+        <div class="section-container">
+          <div class="title-container">
+            <hr>
+            <h2>About Me</h2>
+          </div>
+          <div class="content-container">
+            <p>
+              Hi, I am Michael! I was born in Shanghai, moved to Montreal a few years ago, went to <a href="https://peddie.org/">high school</a> in New Jersey, and currently a sophomore at UC Berkeley, studying computer science and mechanical engineering.
+            </p>
+            <p>
+              I enjoy doing work related to software / hardware optimization. In fall 2023, I joined <a href="https://ev.studentorg.berkeley.edu/">Formula Electric at Berkeley</a> and worked on developing a fully custom 600V Li-ion battery, using python as a tool to optimize power efficiency. In Summer 2024, I joined <a href="https://www.kidrone.org/">KiDrone</a>, a startup working on drone reforestation, to full-stack design a flight path generator and optimizer for military-graded drone from scratch.
+            </p>
+            <p>
+              In my spare time, I love playing competitive ultimate frisbee, watching <a href="https://www.thebluealliance.com/team/5895">FRC</a> events, playing <a href="https://www.instagram.com/lyz.guitar/">guitar</a> and <a href="https://www.instagram.com/michael.handpan/">handpan</a>, tinkering <a href="projects.html">projects</a>, and exploring vintage shops.
+            </p>
+          </div>
+        </div>
+        <!-- Second Section -->
+        <div class="section-container">
+          <div class="title-container">
+            <hr>
+            <h2>Courses Taken</h2>
+          </div>
+          <div class="content-container">
+            <div class="course-list">
+              <div class="year">
+                <h3>Fall 2023</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="courses">
+                <p>
+                  ENGIN 7: Intro to Computer Programming (4)<br>
+                  MATH 53: Multivariable Calculus (4)<br>
+                  PHYS 7B: Electricity & Magnetism (4)<br>
+                  UGBA 102A: Intro to Financial Accounting (3)<br>
+                  R1B: Reading and Composition (4)
+                </p>
+              </div>
+            </div>
+            <div class="course-list">
+              <div class="year">
+                <h3>Spring 2024</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="courses">
+                <p>
+                  CS 61A: Data Structure and Interpretation (4)<br>
+                  EECS 16A: Signal Processing (4)<br>
+                  MATH 54: Linear Algebra (4)<br>
+                  MECENG 40: Thermodynamics (3)<br>
+                  MECENG C85: Solid Mechanics (3)<br>
+                  ENGIN 26: Intro to CAD (2)
+                </p>
+              </div>
+            </div>
+            <div class="course-list">
+              <div class="year">
+                <h3>Summer 2024</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="courses">
+                <p>
+                  MECENG 132: Dynamic System and Feedback Control (3)<br>
+                  ESPM 50AC: Intro to Natural Resource Management (4)<br>
+                  UGIS W158: Global Citizenship (4)
+                </p>
+              </div>
+            </div>
+            <div class="course-list">
+              <div class="year">
+                <h3>Fall 2024</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="courses">
+                <p>
+                  CS 61B: Data Structure and Algorithm (4)<br>
+                  CS 70: Discrete Math and Probability (4)<br>
+                  EECS 16B: Circuit and Device (4)<br>
+                  ENGIN 178: Machine Learning Statistics (4)<br>
+                  MECENG 108: Material Behaviors (4)<br>
+                  MECENG 100: Electronics and Electrical Systems (4)
+                </p>
+              </div>
+            </div>
+            <!-- <div class="course-list">
+              <div class="year">
+                <h3>Spring 2025</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="courses">
+                <p>
+                  CS 61B: Data Structure and Algorithm (4)<br>
+                  CS 70: Discrete Math and Probability (4)<br>
+                  EECS 16B: Circuit and Device (4)<br>
+                  ENGIN 178: Machine Learning Statistics (4)<br>
+                  MECENG 108: Material Behaviors (4)<br>
+                  MECENG 100: Electronics and Electrical Systems (4)
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- Third Section -->
+        <div class="section-container">
+          <div class="title-container">
+            <hr>
+            <h2>Teaching</h2>
+          </div>
+          <div class="content-container">
+            <p>
+              Coming Soon...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="scroll-text" style="--t:50s">
+        <div>
+          <span>Creativity<i>✨</i>,</span>
+          <span>Passion<i>❤️‍🔥</i>,</span>
+          <span>Productivity<i>🔧</i>,</span>
+          <span>Boundlessness<i>🚀</i>,</span>
+          <span>Efficiency<i>⚡</i>,</span>
+          <span>Gratefulness<i>🥰</i>,</span>
+        </div>
+        <div>
+          <span>Creativity<i>✨</i>,</span>
+          <span>Passion<i>❤️‍🔥</i>,</span>
+          <span>Productivity<i>🔧</i>,</span>
+          <span>Boundlessness<i>🚀</i>,</span>
+          <span>Efficiency<i>⚡</i>,</span>
+          <span>Gratefulness<i>🥰</i>,</span>
+        </div>
+      </div>
+
+      <div class="slider slider-bot" reverse="true" style="
+      --width: 200px;
+      --height: 200px;
+      --quantity: 10;">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="./assets/prof/profile-pic-1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="./assets/prof/profile-pic-2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="./assets/prof/profile-pic-3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="./assets/prof/profile-pic-4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="./assets/prof/profile-pic-5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="./assets/prof/profile-pic-6.jpeg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="./assets/prof/profile-pic-7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="./assets/prof/profile-pic-8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="./assets/prof/profile-pic-9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="./assets/prof/profile-pic-10.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="spacer bot"></div>
+    
+    </section>
+    <footer>
+      <p>Copyright &#169; <script>new Date().getFullYear()>2017&&document.write(new Date().getFullYear());</script> Michael Li. All Rights Reserved.</p>
+    </footer>
+
+    <!-- END OF GENERAL -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="./script-about.js"></script>
+  </body>
+</html>
