@@ -272,7 +272,7 @@ a {
 
 .about-text-container {
   position: relative;
-  margin: 20vh auto;
+  margin: 10vh auto;
   display: flex;
   flex-direction: column;
   gap: 6vh;
@@ -369,7 +369,8 @@ a {
 }
 
 .course-list.active .courses {
-  max-height: 150px;
+  max-height: 300px;
+  overflow: auto;
   animation: course-fade 1s ease;
 }
 
@@ -508,7 +509,7 @@ a {
 
 .spacer {
   width: 100%;
-  height: 5vh;
+  height: 2vh;
 }
 
 .spacer.bot {

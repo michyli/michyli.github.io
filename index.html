@@ -33,9 +33,7 @@
               <li><a href="/blog.html">Blog</a></li>
             </ul>
           </nav>
-          <div class="ld-theme">
-            <button type="button" class="toggle"></button>
-          </div>
+          
           <div class="menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +51,9 @@
             </svg>
           </div>
           <div class="dark-part"></div>
+          <div class="ld-theme">
+            <button type="button" class="toggle"></button>
+          </div>
         </div>
       </header>
     
@@ -189,17 +190,13 @@
           <div class="prof-slider-wrapper">
             <div class="prof-slider">
               <img id="slider-1" src="/assets/prof/profile-pic-1.jpg" alt="" class="profile-pic">
-              <img id="slider-2" src="/assets/prof/profile-pic-2.jpg" alt="" class="profile-pic">
+              <img id="slider-2" src="/assets/prof/profile-pic-5.jpg" alt="" class="profile-pic">
               <img id="slider-3" src="/assets/prof/profile-pic-3.jpg" alt="" class="profile-pic">
-              <img id="slider-4" src="/assets/prof/profile-pic-4.jpg" alt="" class="profile-pic">
-              <img id="slider-5" src="/assets/prof/profile-pic-5.jpg" alt="" class="profile-pic">
             </div>
             <div class="slider-nav">
               <a href="#slider-1"></a>
               <a href="#slider-2"></a>
               <a href="#slider-3"></a>
-              <a href="#slider-4"></a>
-              <a href="#slider-5"></a>
             </div>
             <p>scroll
               <i class="ri-arrow-right-double-fill"></i>
@@ -215,59 +212,75 @@
     <section class="work-experience-page">
       <div class="we-header container">
         <div class="timeline-container">
-          <ul class="timeline hidden">
-            <!-- Item 1 -->
-            <li>
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag">KiDrone</span>
-                  <span class="time-wrapper"><span class="time">2024 Summer</span></span>
-                </div>
-                  <p class="desc">Design and implemented a full-field coverage flight path planner algorithm for unmanned military-grade drone from scratch to finish.
-                    <br><br> Python | ArcGIS | PyTorch | Matplotlib
+          <div class="timeline">
+            <ul>      
+              <li>
+                <div class="content">
+                  <h3>Kidrone</h3>
+                  <p>
+                    Design and implemented a full field coverage flight path planner algorithm for 
+                    unmanned military-grade drone from scratch to finish.
+                    <br><br>
+                    Python | ArcGIS | PyTorch | Matplotlib
                   </p>
-              </div>
-            </li>
-            <!-- Item 2 -->
-            <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">Formula Electric at Berkeley</span>
-                  <span class="time-wrapper"><span class="time">2023 - present</span></span>
                 </div>
-                <p class="desc">Worked as a R&D engineer for a ~600V 21700 Li-ion custom battery pack.
-                  Designed an optimization algorthm to maximize pack efficiency and power draw.
-                  <br><br> SolidWorks | Python | Matlab
-                </p>
-              </div>
-            </li>
-            <!-- Item 3 -->
-            <li>
-              <div class="direction-r">
-                <div class="flag-wrapper">
-                  <span class="flag">UC Berkeley</span>
-                  <span class="time-wrapper"><span class="time">2023 - 2027</span></span>
+                <div class="time">
+                  <h4>May-Aug 2024</h4>
                 </div>
-                <p class="desc">Intending Mechanical Engineering and Computer Science simultaneous degree.
-                  <br><br> 3.9 / 4.0
-                </p>
-              </div>
-            </li>
-            <!-- EXAMPLE OF NEXT ITEM -->
-            <!-- NOTE: If there are more items than page height, change .work-experience-page height:100vh to more than 100vh -->
-            <!-- <li>
-              <div class="direction-l">
-                <div class="flag-wrapper">
-                  <span class="flag">Apple Inc.</span>
-                  <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+              </li>
+              
+              <li>
+                <div class="content">
+                  <h3>Formula Electric at Berkeley</h3>
+                  <p>
+                    Worked as a R&D engineer for a ~600V 21700 Li-ion custom battery pack. 
+                    Designed an optimization algorithm to maximiaze pack efficiency and power draw.
+                    <br><br>
+                    SolidWorks | Python | Matlab
+                  </p>
                 </div>
-                <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-              </div>
-            </li> -->
+                <div class="time">
+                  <h4>2023-Present</h4>
+                </div>
+              </li>
+              
+              <li>
+                <div class="content">
+                  <h3>UC Berkeley</h3>
+                  <p>
+                    Intending Computer Science and Mechanical Engineering simultaneous degree.
+                    <br><br>
+                    3.9 / 4.0
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>2023-2027</h4>
+                </div>
+              </li>
 
-            
-          </ul>
+              <li>
+                <div class="content">
+                  <h3>UC Berkeley</h3>
+                  <p>
+                    Intending Computer Science and Mechanical Engineering simultaneous degree.
+                    <br><br>
+                    3.9 / 4.0
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>2023-2027</h4>
+                </div>
+              </li>
+
+              <div style="clear:both;"></div>
+            </ul>
+          </div>
+
         </div>
+
+
+
+
         <div class="exp-container">
           <div class="exp-title hidden">
             <h1>My Experiences
