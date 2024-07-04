@@ -1,30 +1,17 @@
-@media screen and (min-width: 768px) {
-    .menu {
-      background-color: transparent;
-      display: none;
-    }
-    .navbar ul{
-      background: transparent;
-      box-shadow: none;
-      position: fixed;
-      min-width: auto;
-      display: flex;
-      padding: 16px 0px;
-      margin-left: 60px;
-      height: 15vh;
-      transform: translate(0);
-    }
-    .navbar ul li a{
-      padding: 0.7rem 1.5rem;
-    }
-    .header .ld-theme {
-      margin: 0 0 0 auto;
-      padding: 1.2rem;
-      transition: all .2s ease-in-out;
-    }
-    .dark-part {
-      display: none;
-    }
+@media (max-width: 640px) {
+  /*=== Navbar === */
+  nav ul li a {
+    font-size: 11px;
+  }
+  nav li a:after {
+    font-size: 0.6rem;
+  }
+  .open-overlay {
+    right: 1rem;
+  }
+  nav li a:before {
+    width: 15px;
+  }
 }
 
 @media all and (max-width:1375px) {

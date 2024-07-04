@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Li's Website</title>
-    <meta name="author" content="Michael Li" />
+    <meta name="author" content="Michael Li">
     <meta
       name="description"
-      content="I am an undergrad at UC Berkeley from Shanghai and Montreal, and this is my personal website!"
-/>
-    <link rel="icon" href="/assets/li-logo.png"> 
+      content="I am an undergrad at UC Berkeley from Shanghai and Montreal, and this is my personal website!">
+    <link rel="icon" href="/assets/li-logo.png">
+
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet">
 
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/style-about.css">
     <link rel="stylesheet" href="/mediaqueries.css">
     <link rel="stylesheet" href="/color-palette.css">
@@ -24,38 +25,29 @@
     <!-- Navigation Bar -->
     <section class="starting-page">
       <header>
-        <div class="header container">
-          <nav class="navbar">
+        <div class="overlay-navigation">
+          <nav role="navigation">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about.html" class="active">About</a></li>
-              <li><a href="/projects.html">Projects</a></li>
-              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="/" data-content="The beginning">Home</a></li>
+              <li><a href="/about.html" data-content="Curious?">About</a></li>
+              <li><a href="/projects.html" data-content="I got game">Project</a></li>
+              <li><a href="/blog.html" data-content="Record of a slip of time">Blog</a></li>
+              <li><a href="/contact.html" data-content="Don't hesitate">Contact</a></li>
             </ul>
           </nav>
-          <div class="ld-theme">
-            <button type="button" class="toggle"></button>
-          </div>
-          <div class="menu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </div>
-          <div class="dark-part"></div>
+        </div>
+
+        <div class="open-overlay">
+          <span class="bar-top"></span>
+          <span class="bar-middle"></span>
+          <span class="bar-bottom"></span>
+        </div>   
+
+        <!-- Light & Dark Button -->
+        <div class="ld-theme">
+          <button type="button" class="toggle"></button>
         </div>
       </header>
-
-      
 
       <div class="about-text-container hidden">
         <!-- First Section -->
@@ -66,7 +58,7 @@
           </div>
           <div class="content-container">
             <p>
-              Hi, I am Michael! I was born in Shanghai, moved to Montreal a few years ago, went to <a href="https://peddie.org/">high school</a> in New Jersey, 
+              Hi, I am Michael! I was born in Shanghai, moved to Montreal several years back, went to <a href="https://peddie.org/">high school</a> in New Jersey, 
               and currently a sophomore at UC Berkeley, studying computer science and mechanical engineering.
             </p>
             <p>
@@ -222,6 +214,7 @@
       <div class="spacer bot"></div>
     
     </section>
+    
     <footer>
       <p>Copyright &#169; <script>new Date().getFullYear()>2017&&document.write(new Date().getFullYear());</script> Michael Li. All Rights Reserved.</p>
     </footer>
