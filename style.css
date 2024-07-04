@@ -22,6 +22,7 @@
 
 html, body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .no-scroll {
@@ -49,7 +50,6 @@ p, h1, h2, h3, span, a, img, li, ul{
 
 section {
   height: 100vh;
-  scroll-snap-align: start;
 }
 
 /* 
@@ -113,10 +113,10 @@ section {
 /* LIGHT & DARK MODE */
 .ld-theme {
   position: fixed;
-  left: 4vw;
+  left: 3rem;
   top: 3rem;
   transition: all .2s ease-in-out;
-  z-index: 99;
+  z-index: 10;
 }
 
 .toggle {
@@ -340,8 +340,8 @@ nav li:nth-of-type(5){background-color: #C0CC8E}
 
 .open-overlay {
   position: fixed;
-  right: 4vw;
-  top: 3rem;
+  right: 3rem;
+  top: 2.4rem;
   z-index: 100;
   width: 34px;
   display: block;

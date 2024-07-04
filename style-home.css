@@ -6,13 +6,14 @@
 
 html {
     scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
 }
 
 .starting-page {
     background-color: var(--primary-color);
   }
 
-p, h1, h2, span, a{
+p, h1, h2, span, a, i, img{
 color: var(--dark-color);
 }
 
@@ -161,14 +162,12 @@ left: .8rem;
 position: absolute;
 opacity: 0;
 pointer-events: none;
--webkit-filter: invert(0);
 filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(328deg) brightness(98%) contrast(101%);
 transition: transform .5s, opacity .5s;
 }
 
 .button img.dark {
--webkit-filter: invert(1);
-filter: invert(94%) sepia(100%) saturate(2%) hue-rotate(167deg) brightness(109%) contrast(101%);
+filter: invert(100%) sepia(0%) saturate(7471%) hue-rotate(3deg) brightness(97%) contrast(114%);
 }
 
 .button__star-1 {
@@ -185,18 +184,15 @@ top: -4px;
 transform: rotate(-48deg) scale(.1);
 }
 
-.button__circle-1, 
-.button__circle-2 {
-width: 8px;
-}
-
 .button__circle-1 {
+width: 8px;
 top: -8px;
 left: 58px;
 transform: scale(.1);
 }
 
 .button__circle-2 {
+width: 8px;
 right: 34px;
 bottom: -8px;
 transform: scale(.1);
@@ -373,6 +369,7 @@ background-image: url('/assets/wave-transition-2.svg');
 
 .about-me-page {
 background-color: var(--secondary-color);
+height: 100vh;
 }
 
 .am-header {
@@ -391,14 +388,15 @@ display: flex;
 flex-direction: column;
 gap: 1.5rem;
 margin-top: 20vh;
-width: 30vw;
+width: 30%;
 }
 
 .title-text {
-font-size: 4vw;
+font-size: 4rem;
 letter-spacing: 1px;
 line-height: 7.5vmin;
 font-weight: 600;
+text-align: left;
 }
 
 .em {
