@@ -3,6 +3,20 @@
 === GENERAL === 
 ===============
 */
+html{
+scroll-snap-type: none;
+scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+p, h1, h2, h3, span, a, img, li, ul{
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
 
 p, h1, h2, h3, span, i, a{
   color: var(--dark-color);

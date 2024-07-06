@@ -3,6 +3,18 @@
 === NAV BAR ===
 ===============
 */
+@media (width <= 1375) {
+  html {
+    scroll-snap-type: none;
+  }
+}
+
+@media (800px <= width <= 1100px) {
+  nav li a:before {
+    width: 40px;
+  }
+}
+
 @media (600px <= width <= 800px) {
   nav ul li a {
     font-size: 11px;
@@ -15,14 +27,7 @@
   }
   .open-overlay {
     right: 1.8rem;
-}
-}
-
-@media (800px <= width <= 1100px) {
-  nav li a:before {
-    width: 40px;
   }
-
 }
 
 @media (width <= 600px) {
@@ -121,6 +126,10 @@
       width: 350px;
       height: 350px;
       margin-bottom: 200px;
+    }
+    .prof-slider-wrapper {
+      width: 200px;
+      height: 200px;
     }
 }
 

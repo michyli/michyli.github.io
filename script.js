@@ -4,36 +4,25 @@ const body = document.querySelector('body');
 const decor = document.querySelectorAll('.button img');
 const da = document.querySelector('.down-arrow');
 const wave1 = document.querySelector('.trans-curve-1'),
-      wave2 = document.querySelector('.trans-curve-2'),
-      wave3 = document.querySelector('.trans-curve-3');
+      wave2 = document.querySelector('.trans-curve-2');
 
 let getMode = localStorage.getItem('theme');
 if (getMode && getMode === 'dark') {
-  body.classList.add('dark')
   toggleBtn.classList.add('dark')
+  body.classList.add('dark')
   da.classList.add('dark')
-
   wave1.classList.add('dark')
   wave2.classList.add('dark')
-  wave3.classList.add('dark')
-
-  for (let i = 0; i < decor.length; i++) {
-    decor[i].classList.add('dark');
-  }
+  decor.forEach((dec) => dec.classList.add('dark'));
 }
 
 toggleBtn.addEventListener('click', function () {
-  body.classList.toggle('dark')
   toggleBtn.classList.toggle('dark')
+  body.classList.toggle('dark')
   da.classList.toggle('dark')
-
   wave1.classList.toggle('dark')
   wave2.classList.toggle('dark')
-  wave3.classList.toggle('dark')
-
-  for (let i = 0; i < decor.length; i++) {
-    decor[i].classList.toggle('dark');
-  }
+  decor.forEach((dec) => dec.classList.toggle('dark'));
 
   if(!body.classList.contains('dark')){
     return localStorage.setItem('theme', 'light');

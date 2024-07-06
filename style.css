@@ -34,20 +34,6 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-p, h1, h2, h3, span, a, img, li, ul{
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-}
-
 section {
   height: 100vh;
 }
@@ -509,13 +495,8 @@ text-decoration: none;
 ==================
 */
 
-footer {
-  height: 5vh;
-  margin-top: -5vh;
-}
-
 footer p {
-  font-size: 1.2vmin;
+  font-size: 0.6em;
   text-align: center;
   pointer-events: none;
 }

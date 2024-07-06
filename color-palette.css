@@ -7,6 +7,7 @@
     --decor-color:  rgb(231, 152, 136);
     --subfont-color: rgb(54, 72, 89);
     --dark-color: rgb(41, 41, 41);
+    --decor-value: 231, 152, 136;
     --dark-rgb-value: 41, 41, 41;
   
     --gradient-color: linear-gradient(90deg, var(--decor-color), var(--accent-color));
@@ -21,5 +22,6 @@
     --decor-color: rgb(231, 152, 136);
     --subfont-color: rgb(236, 234, 233);
     --dark-color: rgb(255, 248, 240);
+    --decor-value: 231, 152, 136;
     --dark-rgb-value: 255, 248, 240;
   }

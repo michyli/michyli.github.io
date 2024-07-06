@@ -3,6 +3,20 @@
 === CONTACT ME PAGE === 
 =======================
 */
+html {
+scroll-snap-type: none;
+scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+p, h1, h2, h3, span, a, img, li, ul{
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
 
 .starting-page {
 background: linear-gradient(45deg, var(--quaternary-color), var(--tertiary-color));
