@@ -102,7 +102,7 @@
 === ABOUT ME SECTION (HOME PAGE) ===
 ====================================
 */
-@media (width <= 1100px) {
+@media (800px <= width <= 1100px) {
     .about-me-page {
       height: auto;
     }
@@ -114,14 +114,13 @@
       width: 80%;
     }
     .title-text {
-      font-size: 3rem;
+      font-size: 40px;
       text-align: center;
     }
     .body-text {
       width: 90%;
       align-self: center;
     }
-
     .ring {
       width: 350px;
       height: 350px;
@@ -133,53 +132,128 @@
     }
 }
 
+@media (width <= 800px) {
+.about-me-page {
+  height: auto;
+}
+.am-header {
+  flex-direction: column;
+  gap: 50px;
+}
+.intro-container {
+  width: 80%;
+}
+.title-text {
+  font-size: 30px;
+  text-align: center;
+}
+.body-text {
+  width: 90%;
+  align-self: center;
+}
+.ring {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 200px;
+}
+.prof-slider-wrapper {
+  width: 200px;
+  height: 200px;
+}
+}
 
-@media screen and (max-width: 768px) {
+/*
+===============================
+=== Work Experience Section ===
+===============================
+*/
+
+@media screen and (800px <= width <= 1100px) {
   .we-header {
     flex-direction: column;
   }
   .work-experience-page {
-    height: 175h;
+    height: auto;
   }
   .exp-container {
-    max-width: 80vw;
+    max-width: 80%;
   }
   .we-header {
-    gap: 3rem;
-  }
-  .timeline-container {
-    margin-top: 40vh;
+    gap: 1rem;
   }
   .exp-container {
     margin-top: 1rem;
+    margin-bottom: 20vh;
   }
-  .work-experience-page {
-    height: 200vh;
+  .exp-title {
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    margin-bottom: .5rem;
+  }
+  .em-muscle {
+    font-size: 1.4rem;
+  }
+  .timeline-container {
+    margin: 0;
+    width: 90%;
+    max-width: 100%;
+    margin: 20vh 5vw 10vh 0;
   }
   .timeline {
-    margin-top: -20vh;
+    width: 100%;
+  }
+  .timeline ul {
+    max-height: 100vh;
   }
 }
 
-@media(max-width:1000px)
-{
-  .timeline{
-    width:100%;
+@media(width <= 800px){
+  .we-header {
+    flex-direction: column;
   }
-}
+  .work-experience-page {
+    height: auto;
+  }
+  .exp-container {
+    max-width: 80%;
+  }
+  .we-header {
+    gap: 1rem;
+  }
+  .exp-container {
+    margin-top: 1rem;
+    margin-bottom: 20vh;
+  }
+  .exp-title {
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    margin-bottom: .5rem;
+  }
+  .em-muscle {
+    font-size: 1.1rem;
+  }
+  .timeline-container {
+    margin: 0;
+    width: 90%;
+    max-width: 100%;
+    margin: 20vh 5vw 10vh 0;
+  }
+  .timeline {
+    width: 100%;
+    margin-top: 150px;
+  }
 
-@media(max-width:767px){
+  /* Timeline Specific Changes */
   .timeline{
-    width:100%;
     padding-bottom:0;
-  }
-  h1{
-    font-size:40px;
-    text-align:center;
   }
   .timeline:before{
     left:20px;
-    height:100%;
+    top: 60px;
   }
   .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even)
@@ -202,20 +276,20 @@
     right:inherit;
   }
 }
-  
-@media screen and (max-width: 660px) {
 
-.direction-l .desc,
-.direction-r .desc {
-  margin: 1em 4em 0 4em;
-}
-
-}
 
   
+/*
+===========================
+=== HOME PAGE ENDS HERE ===
+===========================
+*/
 
-/* About Me Page */
-
+/*
+====================================
+=== ABOUT ME SECTION (HOME PAGE) ===
+====================================
+*/
 @media screen and (max-width: 800px) {
   .about-text-container {
     width: 80%;

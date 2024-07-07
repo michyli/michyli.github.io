@@ -82,7 +82,6 @@ window.addEventListener('load', () => {
 })
 
 /* Refresh to top of the page */
-
 history.scrollRestoration = "manual";
 $(window).on('beforeunload', function(){
   setTimeout(() => {
@@ -117,6 +116,11 @@ const observer2 = new IntersectionObserver((entries) => {
 
 const hiddenElements2 = document.querySelectorAll('.hiddenstay');
 hiddenElements2.forEach((el) => observer2.observe(el));
+
+/* Fetch scroll height of timeline */
+const timeline = document.querySelector('.timeline-container')
+
+timeline.style.cssText = "--scroll-height: " + timeline.scrollHeight + "px";
 
 /* Contact Form Submit Button*/
 let cntbtn = document.querySelector(".contact-button");

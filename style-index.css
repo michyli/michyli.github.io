@@ -409,7 +409,7 @@ width: 30%;
 }
 
 .title-text {
-font-size: 4rem;
+font-size: 54px;
 letter-spacing: 1px;
 line-height: 7.5vmin;
 font-weight: 600;
@@ -417,7 +417,7 @@ text-align: left;
 }
 
 .em {
-font-size: 2.25vw;
+font-size: 0.5em;
 }
 
 .body-text {
@@ -785,16 +785,17 @@ mask-image: linear-gradient(0deg, transparent,#fff 20%,#fff 80%,transparent);
 }
 
 .timeline{
-margin:20% auto;
-height: 100%;
+margin-top: 125px;
+height: auto;
 }
 
 .timeline:before{
 content:'';
 position:absolute;
 left:50%;
+top: 60px;
 width:2px;
-height:125%;
+height: var(--scroll-height);
 background:#c5c5c5;
 }
 .timeline ul{
@@ -903,16 +904,16 @@ padding: 1rem;
 }
 
 .exp-title {
-width: 20vw;
-font-size: 2vw;
+width: 100%;
+font-size: 36px;
 letter-spacing: 1px;
-line-height: 7.5vmin;
+line-height: 1.1em;
 font-weight: 600;
 text-align: left;
 }
 
 .em-muscle {
-font-size: 1.6rem;
+font-size: 1.5rem;
 -moz-transform: scale(-1, 1);
 -webkit-transform: scale(-1, 1);
 -o-transform: scale(-1, 1);
