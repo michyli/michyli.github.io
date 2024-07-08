@@ -21,30 +21,32 @@
     <link rel="stylesheet" href="/mediaqueries.css">
     <link rel="stylesheet" href="/color-palette.css">
   </head>
-  <body class="no-scroll">
+  <body class="no-scroll" oncontextmenu="return false">
+    <div class="cursor inner"></div>
+    <div class="cursor outer"></div>
     <!-- Navigation Bar -->
     <section class="starting-page">
       <header>
         <div class="overlay-navigation">
           <nav role="navigation">
             <ul>
-              <li><a href="/" data-content="Where I began">Home</a></li>
-              <li><a href="/about.html" data-content="The man behind the curtain">About</a></li>
-              <li><a href="/projects.html" data-content="Witness the possibilities">Project</a></li>
-              <li><a href="/blog.html" data-content="Record of a slip of time">Blog</a></li>
-              <li><a href="/contact.html" data-content="Where we begin">Contact</a></li>
+              <li><a href="/" data-content="Where I began" class="cursorbtnhover">Home</a></li>
+              <li><a href="/about.html" data-content="The man behind the curtain" class="cursorbtnhover">About</a></li>
+              <li><a href="/projects.html" data-content="Witness the possibilities" class="cursorbtnhover">Project</a></li>
+              <li><a href="/blog.html" data-content="Record of a slip of time" class="cursorbtnhover">Blog</a></li>
+              <li><a href="/contact.html" data-content="Where we begin" class="cursorbtnhover">Contact</a></li>
             </ul>
           </nav>
         </div>
 
-        <div class="open-overlay">
+        <div class="open-overlay cursorbtnhover">
           <span class="bar-top"></span>
           <span class="bar-middle"></span>
           <span class="bar-bottom"></span>
         </div>   
 
         <!-- Light & Dark Button -->
-        <div class="ld-theme">
+        <div class="ld-theme cursorbtnhover">
           <button type="button" class="toggle"></button>
         </div>
       </header>
@@ -59,13 +61,13 @@
             <h1 class="profile-title">Michael Li</h1>
           </div>
           <div class="profile-text-wrapper second-anim hiddenstay">
-            <p class="profile-text2">I'm an Undergrad at <span class="indiv-char">UC Berkeley</span> who loves hardware / software optimizations and tinkering.</p>
+            <p class="profile-text2 cursorcontenthover">I'm an Undergrad at <span class="indiv-char">UC Berkeley</span> who loves hardware / software optimizations and tinkering.</p>
           </div>
         </div>
         <div class="btn-container-larger">
           <div class="profile-btn-container">
             <a href="/contact.html" class="button second-anim hiddenstay">
-              <div class="prof-btn1">
+              <div class="prof-btn1 cursorbtnhover">
                 <span class="btn-text">Contact</span>
                 <i class="ri-mail-send-line btn-icon"></i>
                 <div class="button-reflection1"></div>
@@ -81,7 +83,7 @@
             </a>
 
             <a href="https://read.cv/michaelli" class="button second-anim hiddenstay">
-              <div class="prof-btn2">
+              <div class="prof-btn2 cursorbtnhover">
                 <span class="btn-text">Overview</span>
                 <i class="ri-article-line btn-icon"></i>
                 <div class="button-reflection1"></div>
@@ -101,7 +103,7 @@
         </div>      
       </div>
       <div class="down-arrow-wrapper">
-        <div class="wavy-scroll">
+        <div class="wavy-scroll cursorcontenthover">
           <span class="hiddenstay" style="--i:1;">S</span>
           <span class="hiddenstay" style="--i:2;">C</span>
           <span class="hiddenstay" style="--i:3;">R</span>
@@ -127,13 +129,13 @@
             </h1>
           </div>
           <div class="body-text">
-            <p class="bmp-para hidden">
+            <p class="bmp-para cursorcontenthover hidden">
               I'm a student at UC Berkeley intending a Mechanical Engineering and Computer Science simulaneous degree.
               I enjoy the process to create, iterate, and optimize, both hardwares and softwares.
             </p>
             <!-- Learn More Button -->
             <div class="lm-container bmp-para hidden">
-              <a href="/about.html" class="lm-btn">
+              <a href="/about.html" class="lm-btn cursorbtnhover">
                 <span class="lm-circle">
                   <span class="lm-icon lm-arrow"></span>
                 </span>
@@ -144,25 +146,25 @@
             <!-- Social Media Buttons -->
             <div class="social-media bmp-para hidden">
               <div class="sm-wrapper">
-                <a href="https://github.com/michyli"><div class="sm-button github hidden">
+                <a href="https://github.com/michyli"><div class="sm-button github cursorbtnhover hidden">
                   <div class="sm-icon">
                     <i class="ri-github-fill"></i>
                   </div>
                   <span>Github</span>
                 </div></a>
-                <a href="https://www.linkedin.com/in/michael-yunze-li/"><div class="sm-button linkedin hidden">
+                <a href="https://www.linkedin.com/in/michael-yunze-li/"><div class="sm-button linkedin cursorbtnhover hidden">
                   <div class="sm-icon">
                     <i class="ri-linkedin-box-fill"></i>
                   </div>
                   <span>LinkedIn</span>
                 </div></a>
-                <a href="https://www.instagram.com/lyz._.li/"><div class="sm-button insta hidden">
+                <a href="https://www.instagram.com/lyz._.li/"><div class="sm-button insta cursorbtnhover hidden">
                   <div class="sm-icon">
                     <i class="ri-instagram-line"></i>
                   </div>
                   <span>Instagram</span>
                 </div></a>
-                <a href="mailto:michael_li@berkeley.edu?subject=Hi Michael, I'd like to reach out."><div class="sm-button email hidden">
+                <a href="mailto:michael_li@berkeley.edu?subject=Hi Michael, I'd like to reach out."><div class="sm-button email cursorbtnhover hidden">
                   <div class="sm-icon">
                     <i class="ri-mail-line"></i>
                   </div>
@@ -181,9 +183,9 @@
 
           <div class="prof-slider-wrapper">
             <div class="prof-slider">
-              <img id="slider-1" src="/assets/prof/profile-pic-1.jpg" alt="" class="profile-pic">
-              <img id="slider-2" src="/assets/prof/profile-pic-5.jpg" alt="" class="profile-pic">
-              <img id="slider-3" src="/assets/prof/profile-pic-3.jpg" alt="" class="profile-pic">
+              <img loading="lazy" id="slider-1" src="/assets/prof/profile-pic-1.jpg" alt="" class="profile-pic">
+              <img loading="lazy" id="slider-2" src="/assets/prof/profile-pic-5.jpg" alt="" class="profile-pic">
+              <img loading="lazy" id="slider-3" src="/assets/prof/profile-pic-3.jpg" alt="" class="profile-pic">
             </div>
             <div class="slider-nav">
               <a href="#slider-1"></a>
@@ -209,7 +211,7 @@
               <li>
                 <div class="content">
                   <h3>Kidrone</h3>
-                  <p>
+                  <p class="cursorcontenthover">
                     Design and implemented a full field coverage flight path planner algorithm for 
                     unmanned military-grade drone from scratch to finish.
                     <br><br>
@@ -224,7 +226,7 @@
               <li>
                 <div class="content">
                   <h3>Formula Electric at Berkeley</h3>
-                  <p>
+                  <p class="cursorcontenthover">
                     Worked as a R&D engineer for a ~600V 21700 Li-ion custom battery pack. 
                     Designed an optimization algorithm to maximiaze pack efficiency and power draw.
                     <br><br>
@@ -239,7 +241,7 @@
               <li>
                 <div class="content">
                   <h3>UC Berkeley</h3>
-                  <p>
+                  <p class="cursorcontenthover">
                     Intending Computer Science and Mechanical Engineering simultaneous degree.
                     <br><br>
                     3.9 / 4.0
@@ -253,7 +255,7 @@
               <li>
                 <div class="content">
                   <h3>UC Berkeley</h3>
-                  <p>
+                  <p class="cursorcontenthover">
                     Intending Computer Science and Mechanical Engineering simultaneous degree.
                     <br><br>
                     3.9 / 4.0
@@ -280,18 +282,52 @@
               </span>
             </h1>
           </div>
+          
+          <div class="skill-sliders">
+            <div class="slider slider-bot" style="
+            --width: 110px;
+            --height: 30px;
+            --quantity: 8;
+            --time: 13s;">
+              <div class="list">
+                  <div class="item" style="--position: 1"><p>Python</p></div>
+                  <div class="item" style="--position: 2"><p>Java</p></div>
+                  <div class="item" style="--position: 3"><p>JavaScript</p></div>
+                  <div class="item" style="--position: 4"><p>Jquery</p></div>
+                  <div class="item" style="--position: 5"><p>HTML</p></div>
+                  <div class="item" style="--position: 6"><p>CSS</p></div>
+                  <div class="item" style="--position: 7"><p>Matplotlib</p></div>
+                  <div class="item" style="--position: 8"><p>PyTorch</p></div>
+              </div>
+            </div>
+            <div class="slider slider-bot" reverse="true" style="
+            --width: 120px;
+            --height: 30px;
+            --quantity: 6;
+            --time: 15s;">
+              <div class="list">
+                  <div class="item" style="--position: 1"><p>SolidWorks</p></div>
+                  <div class="item" style="--position: 2"><p>Inventor360</p></div>
+                  <div class="item" style="--position: 3"><p>Onshape</p></div>
+                  <div class="item" style="--position: 4"><p>Matlab</p></div>
+                  <div class="item" style="--position: 5"><p>Cura</p></div>
+                  <div class="item" style="--position: 6"><p>ArcGIS</p></div>
+              </div>
+            </div>
+          </div>
+
           <div class="exp-body-text">
-            <p class="hidden">
+            <p class="cursorcontenthover hidden">
               I enjoy doing works related to optimization and design. 
               and I am experienced at taking a project from research to implementation.
             </p>
-            <p class="hidden">
+            <p class="cursorcontenthover hidden">
               I also love tinkering projects in a variety of fields. 
               From robotic kinematics to neural networks, I enjoy digging into the <span>why</span> and finding out the <span>how</span>.
             </p>
           </div>
           <div class="lm-container exp-btn-container hidden">
-            <a href="/assets/Resume-Michael-Li.pdf" target="_blank" class="lm-btn">
+            <a href="/assets/Resume-Michael-Li.pdf" target="_blank" class="lm-btn cursorbtnhover">
               <span class="lm-circle">
                 <span class="lm-icon lm-arrow"></span>
               </span>
@@ -299,20 +335,20 @@
             </a>
           </div>
           <div class="lm-container exp-btn-container hidden">
-            <a href="/assets/Portfolio-Michael-Li.pdf" target="_blank" class="lm-btn">
+            <a href="/assets/Portfolio-Michael-Li.pdf" target="_blank" class="lm-btn cursorbtnhover">
               <span class="lm-circle">
                 <span class="lm-icon lm-arrow"></span>
               </span>
               <span class="lm-text">Proj. Portfolio</span>
             </a>
           </div>
-          <p class="last-updated hidden">Last updated May 10, 2024</p>
+          <p class="last-updated cursorcontenthover hidden">Last updated May 10, 2024</p>
         </div>
       </div>
     </section>
     
     <footer>
-      <p>Copyright &#169; <script>new Date().getFullYear()>2017&&document.write(new Date().getFullYear());</script> Michael Li. All Rights Reserved.</p>
+      <p class=" cursorcontenthover">Copyright &#169; <script>new Date().getFullYear()>2017&&document.write(new Date().getFullYear());</script> Michael Li. All Rights Reserved.</p>
     </footer>
 
     <!-- END OF GENERAL -->

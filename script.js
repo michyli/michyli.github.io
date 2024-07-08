@@ -30,6 +30,59 @@ toggleBtn.addEventListener('click', function () {
   return localStorage.setItem('theme', 'dark');
 });
 
+/* Cursor Change */
+const cursorinner = document.querySelector(".inner");
+const cursorouter = document.querySelector(".outer");
+const cursor = document.querySelectorAll(".cursor")
+
+document.addEventListener('mousemove', function (e) {
+  const posX = e.clientX;
+  const posY = e.clientY;
+  cursor.forEach((cur) => {
+    cur.style.left = `${posX}px`;
+    cur.style.top = `${posY}px`;
+  })
+  
+  cursorouter.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+  }, {duration:50, fill:"backwards"})
+})
+/* Cursor click effect */
+document.body.addEventListener('mousedown', () => {
+  cursorinner.classList.add("click-hover");
+  cursorouter.classList.add("click-hover");
+})
+document.body.addEventListener('mouseup', () => {
+  cursorinner.classList.remove("click-hover");
+  cursorouter.classList.remove("click-hover");
+})
+
+/* Cursor hover over button effect */
+const buttonhovercursor = $(".cursorbtnhover")
+buttonhovercursor.on("mouseenter", function() {
+  cursorinner.classList.add("btn-hover");
+  cursorouter.classList.add("btn-hover");
+})
+buttonhovercursor.on("mouseleave", function() {
+  cursorinner.classList.remove("btn-hover");
+  cursorouter.classList.remove("btn-hover");
+})
+
+/* Cursor hover over text effect */
+const contenthovercursor = $(".cursorcontenthover")
+contenthovercursor.on("mouseenter", function() {
+  cursorinner.classList.add("text-hover");
+  cursorouter.classList.add("text-hover");
+})
+contenthovercursor.on("mouseleave", function() {
+  cursorinner.classList.remove("text-hover");
+  cursorouter.classList.remove("text-hover");
+})
+  
+
+
+
 /* Nav Bar */
 $('.open-overlay').click(function() {
   var overlay_navigation = $('.overlay-navigation'),
@@ -76,7 +129,6 @@ window.addEventListener('load', () => {
     document.body.classList.remove('no-scroll')
   }, 800);
   loader.addEventListener('transitioned', () =>{
-    
     document.body.removeChild('load')
   })
 })
@@ -92,7 +144,6 @@ $(window).on('beforeunload', function(){
 /* Appear on Scroll Animations */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry)
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
     } else {
@@ -107,7 +158,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry)
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
     }

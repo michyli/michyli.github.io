@@ -23,20 +23,103 @@
 html, body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .no-scroll {
   overflow: hidden;
 }
 
-body {
+body{
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+}
+
+body, body button, body a {
+  cursor: none !important;
 }
 
 section {
   height: 100vh;
 }
+
+/* 
+==============
+=== Cursor === 
+==============
+*/
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.inner {
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark-color);
+  transition: width .1s ease-in-out,
+              height .1s ease-in-out,
+              opacity .1s ease-in-out;
+}
+
+.outer {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(var(--dark-rgb-value), 0.85);
+  transition: width .1s ease-in-out,
+              height .1s ease-in-out,
+              opacity .1s ease-in-out;
+  animation: blob 14s infinite cubic-bezier(.43,.25,.56,.78);
+}
+
+.inner.text-hover {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(255, 248, 240);
+  mix-blend-mode: difference;
+}
+
+.outer.text-hover {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.inner.btn-hover {
+  width: 12px;
+  height: 12px;
+}
+
+.outer.btn-hover {
+  width: 24px;
+  height: 24px;
+  animation: blob 14s infinite cubic-bezier(.43,.25,.56,.78);
+}
+
+.inner.click-hover {
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
+}
+
+@keyframes blob {
+  0%, 100% {border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;}
+  10% {border-radius: 40% 60% 65% 35% / 34% 58% 42% 66% ;}
+  20% {border-radius: 66% 34% 60% 40% / 42% 41% 59% 58% ;}
+  30% {border-radius: 70% 30% 67% 33% / 35% 49% 51% 65% ;}
+  40% {border-radius: 54% 46% 60% 40% / 37% 33% 67% 63% ;}
+  50% {border-radius: 46% 54% 60% 40% / 59% 56% 44% 41% ;}
+  60% {border-radius: 46% 54% 48% 52% / 40% 38% 62% 60% ;}
+  70% {border-radius: 62% 38% 42% 58% / 59% 58% 42% 41% ;}
+  80% {border-radius: 46% 54% 42% 58% / 38% 48% 52% 62% ;}
+  90% {border-radius: 51% 49% 66% 34% / 59% 28% 72% 41% ;}
+}
+
 
 /* 
 ==================
@@ -108,7 +191,6 @@ section {
 .toggle {
   height: 10px;
   width: 40px;
-  cursor: pointer;
   border-radius: 25px;
   background-color: #fff;
   box-shadow: -6px -6px 24px hsl(234, 48%, 98%),
@@ -331,14 +413,17 @@ nav li:nth-of-type(5){background-color: #C0CC8E}
   z-index: 100;
   width: 34px;
   display: block;
-  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.open-overlay:hover {
+  transform: scale(.95);
 }
 
 .open-overlay span {
   display: block;
   height: 2px;
   background-color: var(--dark-color);
-  cursor: pointer;
   margin-top: 8px;
 }
 
@@ -498,7 +583,6 @@ text-decoration: none;
 footer p {
   font-size: 0.6em;
   text-align: center;
-  pointer-events: none;
 }
 
 /* 

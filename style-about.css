@@ -157,6 +157,7 @@ p, h1, h2, h3, span, i, a{
   }
 }
 
+/* Image Slider */
 .slider{
   width: 100%;
   height: var(--height);
@@ -218,6 +219,7 @@ p, h1, h2, h3, span, i, a{
   }
 }
 
+/* Word Slider */
 .scroll-text {
   display: flex;
   white-space: nowrap;
