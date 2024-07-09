@@ -296,11 +296,14 @@ nav ul li {
 
 nav li a {
   position: relative;
-  top: 46%;
+  height: 100%;
+  top: 0;
+  padding-top: calc((100vh - 1em) / 2);
+  padding-bottom: calc((100vh - 1em) / 2);
   color: rgb(255, 248, 240);
   text-transform: uppercase;
   font-family: 'Work sans', sans-serif;
-  font-weight: 300;
+  font-weight: 1em;
   letter-spacing: 4px;
   text-decoration: none;
   display: block;
@@ -335,7 +338,7 @@ nav li a:after {
   margin-left: auto;
   left: 0;
   right: 0;
-  bottom: -50px;
+  bottom: 46vh;
   text-transform: none;
   font-family: 'Open sans', serif;
   font-weight: 300;

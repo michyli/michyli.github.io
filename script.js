@@ -1,3 +1,8 @@
+/* 
+===============
+=== GENERAL ===
+===============
+*/
 /* Toggle Dark and Light Mode */
 const toggleBtn = document.querySelector('.toggle');
 const body = document.querySelector('body');
@@ -33,7 +38,7 @@ toggleBtn.addEventListener('click', function () {
 /* Cursor Change */
 const cursorinner = document.querySelector(".inner");
 const cursorouter = document.querySelector(".outer");
-const cursor = document.querySelectorAll(".cursor")
+const cursor = document.querySelectorAll(".cursor");
 
 document.addEventListener('mousemove', function (e) {
   const posX = e.clientX;
@@ -70,7 +75,7 @@ buttonhovercursor.on("mouseleave", function() {
 })
 
 /* Cursor hover over text effect */
-const contenthovercursor = $(".cursorcontenthover")
+const contenthovercursor = $(".cursorcontenthover");
 contenthovercursor.on("mouseenter", function() {
   cursorinner.classList.add("text-hover");
   cursorouter.classList.add("text-hover");
@@ -79,9 +84,6 @@ contenthovercursor.on("mouseleave", function() {
   cursorinner.classList.remove("text-hover");
   cursorouter.classList.remove("text-hover");
 })
-  
-
-
 
 /* Nav Bar */
 $('.open-overlay').click(function() {
@@ -168,10 +170,38 @@ const hiddenElements2 = document.querySelectorAll('.hiddenstay');
 hiddenElements2.forEach((el) => observer2.observe(el));
 
 /* Fetch scroll height of timeline */
-const timeline = document.querySelector('.timeline-container')
+const timeline = document.querySelector('.timeline-container');
+if (timeline !== null) {
+  timeline.style.cssText = "--scroll-height: " + timeline.scrollHeight + "px";
+}
 
-timeline.style.cssText = "--scroll-height: " + timeline.scrollHeight + "px";
+/* 
+=====================
+=== ABOUT ME PAGE ===
+=====================
+*/
+/* Course Taken Accordion */
+const coursetaken = document.querySelectorAll(".course-list");
+coursetaken.forEach(cour => {
+  cour.addEventListener("click", () => {
+    cour.classList.toggle("active")
 
+    /* Change accordion extended height to fit content */
+    let content = cour.querySelector(".courses")
+    if (cour.classList.contains("active")) {
+      content.style.height = `${content.scrollHeight}px`;
+    }
+    else {
+      content.style.height = "0px";
+    }
+  })
+}) 
+
+/* 
+====================
+=== CONTACT PAGE ===
+====================
+*/
 /* Contact Form Submit Button*/
 let cntbtn = document.querySelector(".contact-button");
 let emailinput = document.querySelector(".email-input");
@@ -198,11 +228,3 @@ function OnInput() {
   this.style.height = 'auto';
   this.style.height = (this.scrollHeight) + "px";
 }
-
-/* Course Taken Accordion */
-const coursetaken = document.querySelectorAll(".course-list") 
-coursetaken.forEach(cour => {
-  cour.addEventListener("click", () => {
-    cour.classList.toggle("active")
-  })
-}) 
