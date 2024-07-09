@@ -125,7 +125,7 @@ p, h1, h2, h3, span, i, a{
 .courses {
   height: 0;
   overflow: hidden;
-  transition: height 1s ease;
+  transition: height .25s ease-in-out;
 }
 
 .courses p {
@@ -134,7 +134,7 @@ p, h1, h2, h3, span, i, a{
 
 .course-list.active .courses {
   overflow: auto;
-  animation: course-fade 1s ease;
+  animation: course-fade .25s ease-in-out;
 }
 
 .course-list.active i {
@@ -185,7 +185,8 @@ p, h1, h2, h3, span, i, a{
   position: absolute;
   left: 100%;
   animation: autoRun var(--time) linear infinite;
-  transition: filter 0.5s;
+  transition: filter 0.5s ease,
+              opacity 0.5s ease;
   animation-delay: calc( (var(--time) / var(--quantity)) * (var(--position) - 1) )!important;
 }
 
@@ -205,10 +206,12 @@ p, h1, h2, h3, span, i, a{
 .slider:hover .item{
   animation-play-state: paused!important;
   filter: grayscale(1);
+  opacity: 0.6;
 }
 
 .slider .item:hover{
   filter: grayscale(0);
+  opacity: 1;
 }
 
 .slider[reverse="true"] .item{
