@@ -5,15 +5,10 @@
 */
 
 html{
-scroll-snap-type: mandatory;
-scroll-snap-type: y mandatory;
+scroll-snap-type: none;
 scroll-behavior: smooth;
 height: 100vh;
 overflow: scroll;
-}
-
-html section{
-scroll-snap-align: start;
 }
 
 ::-webkit-scrollbar {
@@ -32,6 +27,40 @@ background-color: var(--primary-color);
 
 p, h1, h2, span, a{
 color: var(--dark-color);
+}
+
+/* 
+=======================
+=== DARK MODE LABEL === 
+=======================
+*/
+.darkmode-label {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    opacity: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: calc(3rem - 38px);
+    transition: opacity 0.25s ease;
+}
+
+.darkmode-label p {
+    width: 100%;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.darkmode i {
+    font-size: .8em;
+}
+
+.darkmode-label.disappear {
+    opacity: 0;
 }
 
 
@@ -57,8 +86,6 @@ justify-content: center;
 margin-top: 10vh;
 padding-bottom: 3vmin;
 }
-
-
 
 .profile-text1 {
 font-size: 2vmin;

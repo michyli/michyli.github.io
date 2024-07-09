@@ -179,7 +179,11 @@ section {
   100% {height: 0%;}
 }
 
-/* LIGHT & DARK MODE */
+/* 
+================================
+=== LIGHT & DARK MODE BUTTON === 
+================================
+*/
 .ld-theme {
   position: fixed;
   left: 3rem;

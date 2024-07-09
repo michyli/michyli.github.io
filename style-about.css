@@ -27,10 +27,9 @@ p, h1, h2, h3, span, i, a{
 === CONTENT STYLING === 
 =======================
 */
-
 .starting-page {
   background: linear-gradient(var(--tertiary-color), var(--secondary-color));
-  height: 100vh;
+  height: auto;
 }
 
 .about-text-container {
@@ -157,16 +156,9 @@ p, h1, h2, h3, span, i, a{
   }
 }
 
-
-
-.slider-section {
-  background: linear-gradient(var(--secondary-color), var(--quaternary-color));
-  height: auto;
-}
-
 /* 
 ====================
-=== Image Slider ===
+=== IMAGE SLIDER ===
 ====================
 */
 .slider{
@@ -232,7 +224,7 @@ p, h1, h2, h3, span, i, a{
 
 /* 
 ====================
-=== Word Slider ===
+=== WORD SLIDER ===
 ====================
 */
 .scroll-text {
@@ -299,11 +291,11 @@ p, h1, h2, h3, span, i, a{
 
 
 /* 
-====================
-=== Copyrights ===
-====================
+==================
+=== COPYRIGHTS ===
+==================
 */
 footer {
   height: 3vh;
-  background-color: var(--quaternary-color);
+  background-color: var(--secondary-color);
 }

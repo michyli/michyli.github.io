@@ -3,6 +3,7 @@
 === GENERAL ===
 ===============
 */
+
 /* Toggle Dark and Light Mode */
 const toggleBtn = document.querySelector('.toggle');
 const body = document.querySelector('body');
@@ -29,11 +30,24 @@ toggleBtn.addEventListener('click', function () {
   wave2.classList.toggle('dark')
   decor.forEach((dec) => dec.classList.toggle('dark'));
 
+  /* Dark Mode label disappear on first click of dark mode button */
+  if (!document.querySelector(".darkmode-label").classList.contains('disappear')) {
+    document.querySelector(".darkmode-label").classList.add('disappear')
+  }
+
   if(!body.classList.contains('dark')){
     return localStorage.setItem('theme', 'light');
   }
   return localStorage.setItem('theme', 'dark');
 });
+
+/* If user didn't click dark mode in 15 seconds, label disappear as well */
+setTimeout(function() {
+  const dmlabel = document.querySelector(".darkmode-label");
+  if (!dmlabel.classList.contains('disappear')) {
+    dmlabel.classList.add('disappear')
+  }
+}, 15000)
 
 /* Cursor Change */
 const cursorinner = document.querySelector(".inner");
