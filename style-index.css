@@ -1,7 +1,7 @@
 /* 
-========================
+===============
 === GENERAL === 
-========================
+===============
 */
 
 html{
@@ -46,7 +46,8 @@ color: var(--dark-color);
     flex-direction: column;
     justify-content: center;
     margin-left: calc(3rem - 38px);
-    transition: opacity 0.25s ease;
+    transition: opacity 0.3s ease,
+                transform 0.3s ease;
 }
 
 .darkmode-label p {
@@ -55,11 +56,13 @@ color: var(--dark-color);
     font-style: italic;
 }
 
-.darkmode i {
-    font-size: .8em;
+.darkmode-label i {
+    color: var(--dark-color);
+    font-size: 1em;
 }
 
 .darkmode-label.disappear {
+    transform: translateY(-5px);
     opacity: 0;
 }
 
@@ -87,8 +90,13 @@ margin-top: 10vh;
 padding-bottom: 3vmin;
 }
 
+.profile-text-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .profile-text1 {
-font-size: 2vmin;
+font-size: 1em;
 letter-spacing: 1px;
 font-weight: 500;
 text-decoration: none;
@@ -96,19 +104,20 @@ color: var(--subfont-color);
 }
 
 .profile-title {
-font-size: 12vmin;
+font-size: 7em;
 letter-spacing: 1px;
 font-weight: 700;
 }
 
 .profile-text2 {
 max-width: 60vw;
-font-size: 1.9vmin;
+align-self: center;
+font-size: 1em;
 letter-spacing: 1px;
 font-weight: 400;
 text-wrap: pretty;
 color: var(--subfont-color);
-line-height: 3vmin;
+line-height: 1.25em;
 }
 
 .profile-btn-container {
@@ -805,7 +814,8 @@ mask-image: linear-gradient(0deg, transparent,#fff 20%,#fff 80%,transparent);
 
 .timeline{
 margin-top: 125px;
-height: auto;
+margin-bottom: 20px;
+height: var(--scroll-height);
 }
 
 .timeline:before{
@@ -1030,10 +1040,28 @@ from{
 animation-play-state: paused!important;
 }
 
+.slider .item:before{
+    content: "";
+    background: rgba(var(--decor-value), 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+    padding-bottom: 1px;
+    box-sizing: unset;
+}
+
 .slider .item:hover{
-background-color: rgba(var(--decor-value), 0.1);
 border-color: var(--accent-color);
 opacity: 1;
+}
+
+.slider .item:hover:before {
+    width: 100%;
 }
 
 .slider[reverse="true"] .item{

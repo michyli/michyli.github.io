@@ -90,6 +90,28 @@
     bottom: -10px;
   }
 }
+/*
+=======================
+=== PROFILE SECTION ===
+=======================
+*/
+@media (800px <= width <= 1100px) {
+  .profile-text1, .profile-text2 {
+    font-size: 0.85em;
+  }
+  .profile-title {
+    font-size: 6em;
+  }
+}
+
+@media (width <= 800px) {
+  .profile-text1, .profile-text2 {
+    font-size: 0.75em;
+  }
+  .profile-title {
+    font-size: 12vw;
+  }
+}
 
 /*
 ====================================
@@ -164,7 +186,7 @@
 
 @media screen and (800px <= width <= 1100px) {
   .we-header {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .work-experience-page {
     height: auto;
@@ -177,7 +199,6 @@
   }
   .exp-container {
     margin-top: 1rem;
-    margin-bottom: 20vh;
   }
   .exp-title {
     font-size: 40px;
@@ -193,7 +214,10 @@
     margin: 0;
     width: 90%;
     max-width: 100%;
-    margin: 20vh 5vw 10vh 0;
+    height: auto;
+    margin: 5vh 0 10vh 0;
+    overflow-y: visible;
+    mask-image: none;
   }
   .timeline {
     width: 100%;
@@ -205,7 +229,7 @@
 
 @media(width <= 800px){
   .we-header {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .work-experience-page {
     height: auto;
@@ -218,7 +242,6 @@
   }
   .exp-container {
     margin-top: 1rem;
-    margin-bottom: 20vh;
   }
   .exp-title {
     font-size: 30px;
@@ -233,8 +256,11 @@
   .timeline-container {
     margin: 0;
     width: 90%;
+    height: auto;
     max-width: 100%;
-    margin: 20vh 5vw 10vh 0;
+    margin: 5vh 0 10vh 0;
+    overflow-y: visible;
+    mask-image: none;
   }
   .timeline {
     width: 100%;

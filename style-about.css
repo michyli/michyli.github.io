@@ -3,6 +3,7 @@
 === GENERAL === 
 ===============
 */
+
 html{
 scroll-snap-type: none;
 scroll-behavior: smooth;
@@ -28,7 +29,7 @@ p, h1, h2, h3, span, i, a{
 =======================
 */
 .starting-page {
-  background: linear-gradient(var(--tertiary-color), var(--secondary-color));
+  background: var(--secondary-color);
   height: auto;
 }
 

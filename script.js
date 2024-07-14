@@ -7,33 +7,16 @@
 /* Toggle Dark and Light Mode */
 const toggleBtn = document.querySelector('.toggle');
 const body = document.querySelector('body');
-const decor = document.querySelectorAll('.button img');
-const da = document.querySelector('.down-arrow');
-const wave1 = document.querySelector('.trans-curve-1'),
-      wave2 = document.querySelector('.trans-curve-2');
 
 let getMode = localStorage.getItem('theme');
 if (getMode && getMode === 'dark') {
   toggleBtn.classList.add('dark')
   body.classList.add('dark')
-  da.classList.add('dark')
-  wave1.classList.add('dark')
-  wave2.classList.add('dark')
-  decor.forEach((dec) => dec.classList.add('dark'));
 }
 
 toggleBtn.addEventListener('click', function () {
   toggleBtn.classList.toggle('dark')
   body.classList.toggle('dark')
-  da.classList.toggle('dark')
-  wave1.classList.toggle('dark')
-  wave2.classList.toggle('dark')
-  decor.forEach((dec) => dec.classList.toggle('dark'));
-
-  /* Dark Mode label disappear on first click of dark mode button */
-  if (!document.querySelector(".darkmode-label").classList.contains('disappear')) {
-    document.querySelector(".darkmode-label").classList.add('disappear')
-  }
 
   if(!body.classList.contains('dark')){
     return localStorage.setItem('theme', 'light');
@@ -41,13 +24,6 @@ toggleBtn.addEventListener('click', function () {
   return localStorage.setItem('theme', 'dark');
 });
 
-/* If user didn't click dark mode in 15 seconds, label disappear as well */
-setTimeout(function() {
-  const dmlabel = document.querySelector(".darkmode-label");
-  if (!dmlabel.classList.contains('disappear')) {
-    dmlabel.classList.add('disappear')
-  }
-}, 15000)
 
 /* Cursor Change */
 const cursorinner = document.querySelector(".inner");
@@ -67,6 +43,7 @@ document.addEventListener('mousemove', function (e) {
     top: `${posY}px`
   }, {duration:50, fill:"backwards"})
 })
+
 /* Cursor click effect */
 document.body.addEventListener('mousedown', () => {
   cursorinner.classList.add("click-hover");
@@ -168,10 +145,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-/* Appear and Stay Animation */
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+/* Appear and Stay Animation */
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -182,63 +159,3 @@ const observer2 = new IntersectionObserver((entries) => {
 
 const hiddenElements2 = document.querySelectorAll('.hiddenstay');
 hiddenElements2.forEach((el) => observer2.observe(el));
-
-/* Fetch scroll height of timeline */
-const timeline = document.querySelector('.timeline-container');
-if (timeline !== null) {
-  timeline.style.cssText = "--scroll-height: " + timeline.scrollHeight + "px";
-}
-
-/* 
-=====================
-=== ABOUT ME PAGE ===
-=====================
-*/
-/* Course Taken Accordion */
-const coursetaken = document.querySelectorAll(".course-list");
-coursetaken.forEach(cour => {
-  cour.addEventListener("click", () => {
-    cour.classList.toggle("active")
-
-    /* Change accordion extended height to fit content */
-    let content = cour.querySelector(".courses")
-    if (cour.classList.contains("active")) {
-      content.style.height = `${content.scrollHeight}px`;
-    }
-    else {
-      content.style.height = "0px";
-    }
-  })
-}) 
-
-/* 
-====================
-=== CONTACT PAGE ===
-====================
-*/
-/* Contact Form Submit Button*/
-let cntbtn = document.querySelector(".contact-button");
-let emailinput = document.querySelector(".email-input");
-
-function isEmail($email) {
-  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-  return emailReg.test( $email );
-}
-
-function active() {
-  if ($(".contact-inputs").get().every(e => e.value) && isEmail(emailinput.value)) {
-    // Every '.contact-inputs' has a non-blank value
-      cntbtn.classList.toggle("is_active");
-  }
-}
-
-const tx = document.getElementsByTagName("textarea");
-for (let i = 0; i < tx.length; i++) {
-  tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
-  tx[i].addEventListener("input", OnInput, false);
-}
-
-function OnInput() {
-  this.style.height = 'auto';
-  this.style.height = (this.scrollHeight) + "px";
-}
