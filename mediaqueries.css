@@ -130,7 +130,7 @@
       width: 80%;
     }
     .title-text {
-      font-size: 30px;
+      font-size: 40px;
       text-align: center;
     }
     .body-text {
@@ -149,33 +149,33 @@
 }
 
 @media (width <= 800px) {
-.about-me-page {
-  height: auto;
-}
-.am-header {
-  flex-direction: column;
-  gap: 50px;
-}
-.intro-container {
-  width: 80%;
-}
-.title-text {
-  font-size: 20px;
-  text-align: center;
-}
-.body-text {
-  width: 90%;
-  align-self: center;
-}
-.ring {
-  width: 350px;
-  height: 350px;
-  margin-bottom: 200px;
-}
-.prof-slider-wrapper {
-  width: 200px;
-  height: 200px;
-}
+    .about-me-page {
+      height: auto;
+    }
+    .am-header {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .intro-container {
+      width: 80%;
+    }
+    .title-text {
+      font-size: 25px;
+      text-align: center;
+    }
+    .body-text {
+      width: 90%;
+      align-self: center;
+    }
+    .ring {
+      width: 350px;
+      height: 350px;
+      margin-bottom: 200px;
+    }
+    .prof-slider-wrapper {
+      width: 200px;
+      height: 200px;
+    }
 }
 
 /*
@@ -298,17 +298,11 @@
 }
 
 
-  
-/*
-===========================
-=== HOME PAGE ENDS HERE ===
-===========================
-*/
 
 /*
-====================================
-=== ABOUT ME SECTION (HOME PAGE) ===
-====================================
+=====================
+=== ABOUT ME PAGE ===
+=====================
 */
 @media screen and (max-width: 800px) {
   .about-text-container {
@@ -322,5 +316,31 @@
   }
   .content-container {
     width: 100%;
+  }
+}
+
+
+/*
+=====================
+=== PROJECTS PAGE ===
+=====================
+*/
+@media (width <= 800px) {
+  .navbar-background {
+    flex-direction: column;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .project-tab {
+    width: 250px;
+  }
+  .project-tab p {
+    font-size: 1.2em;
+  }
+  .project-container {
+    top: 220px;
   }
 }

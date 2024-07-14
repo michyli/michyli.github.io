@@ -29,16 +29,7 @@ sideproj_tab.addEventListener('click', function() {
   }, 400)
 })
 
-/* Fetch scroll height of flipcard container */
-const flipcard_container = document.querySelector('.project-container');
-
-if (mainproj_tab.classList.contains('active')) {
-  flipcard_container.style.height = mainproj_cont.scrollHeight + "px";
-} else if (sideproj_tab.classList.contains('active')) {
-  flipcard_container.style.height = sideproj_cont.scrollHeight + "px";
-}
-
-/* Flip Card */
+/* Flip Card Basic Mechanics*/
 const flipcards_main = document.querySelectorAll(".main-project-container .flipcard");
 flipcards_main.forEach((card) => {
   /* card.style.transitionDelay = int("--fcnum") * 50 + "ms"; */
@@ -62,3 +53,31 @@ flipcards_side.forEach((card) => {
     }
   })
 })
+
+/* Automatic resize section based on how many flipcards there are */
+const flipcard_container = document.querySelector('.project-container');
+var stylemain = window.getComputedStyle(mainproj_cont),
+      gapmain = stylemain.getPropertyValue('gap').replace('px', '');
+var styleside = window.getComputedStyle(sideproj_cont),
+      gapside = styleside.getPropertyValue('gap').replace('px', '');
+var cardcount_main = mainproj_cont.childElementCount;
+var cardcount_side = sideproj_cont.childElementCount;
+
+$(window).resize(function (e) {
+  var fc_heightmain = flipcards_main[0].clientHeight;
+  var fc_heightside = flipcards_side[0].clientHeight;
+  if ($(window).width() > 800) {
+    if (mainproj_tab.classList.contains('active')) {
+      flipcard_container.style.height = cardcount_main * fc_heightmain + (cardcount_main - 1) * gapmain + 'px';
+    } else if (sideproj_tab.classList.contains('active')) {
+      flipcard_container.style.height = cardcount_side * fc_heightside + (cardcount_side - 1) * gapside + 'px';
+    }
+  } else {
+    if (mainproj_tab.classList.contains('active')) {
+      flipcard_container.style.height = cardcount_main * fc_heightmain + (cardcount_main - 1) * gapmain + 70 + 'px';
+    } else if (sideproj_tab.classList.contains('active')) {
+      flipcard_container.style.height = cardcount_side * fc_heightside + (cardcount_side - 1) * gapside + 70 + 'px';
+    }
+  }
+});
+$(window).trigger("resize");

@@ -13,6 +13,10 @@
   font-size: 100%;
   font: inherit;
   box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+html {
   transition: color 0.25s ease-in-out, 
               background-color 0.5s ease-in-out, 
               background-image 0.5s ease-in-out, 
