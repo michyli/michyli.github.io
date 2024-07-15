@@ -49,7 +49,5 @@ function scrolltoaboutme() {
 }
 
 /* Fetch scroll height of timeline */
-const timeline = document.querySelector('.timeline-container');
-if (timeline !== null) {
-  timeline.style.cssText = "--scroll-height: " + timeline.scrollHeight + "px";
-}
+const timeline_cont = document.querySelector('.timeline-container');
+timeline_cont.style.cssText = "--scroll-height: " + timeline_cont.scrollHeight + "px";

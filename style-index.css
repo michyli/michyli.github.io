@@ -777,7 +777,7 @@ background-image: url('/assets/wave-transition-4.svg');
 
 .work-experience-page {
 background-color: var(--tertiary-color);
-height: 100vh;
+min-height: 100vh;
 }
 
 .we-header {
@@ -804,12 +804,13 @@ max-width: 95%;
 .timeline-container {
 position: relative;
 max-width: 800px;
-background-color: rgba(var(--dark-rgb-value), 0.025);
 height: 80vh;
+background-color: rgba(var(--dark-rgb-value), 0.025);
 max-width: 50vw;
 margin: 10vh 5vw 10vh 0;
 overflow-y: scroll;
 mask-image: linear-gradient(0deg, transparent,#fff 20%,#fff 80%,transparent);
+scroll-behavior: smooth;
 }
 
 .timeline{
@@ -928,7 +929,7 @@ display: flex;
 flex-direction: column;
 max-width: 30vw;
 gap: .5rem;
-margin-top: 15vh;
+margin-top: 10vh;
 padding: 1rem;
 }
 
@@ -1207,5 +1208,6 @@ transform: translateX(0);
 
 footer {
     height: 3vh;
+    padding-bottom: 1vh;
     background-color: var(--tertiary-color);
   }

@@ -38,7 +38,7 @@ flipcards_main.forEach((card) => {
       card.classList.remove("flipped");
     } else {
       flipcards_main.forEach((cd) => cd.classList.remove('flipped'))
-      card.classList.toggle("flipped");
+      card.classList.add("flipped");
     }
   })
 })
@@ -49,7 +49,7 @@ flipcards_side.forEach((card) => {
       card.classList.remove("flipped");
     } else {
       flipcards_side.forEach((cd) => cd.classList.remove('flipped'))
-      card.classList.toggle("flipped");
+      card.classList.add("flipped");
     }
   })
 })
