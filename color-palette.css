@@ -11,7 +11,7 @@
     --decor-value: 231, 152, 136;
     --dark-rgb-value: 41, 41, 41;
     --boxshadow-dark: rgb(21, 21, 21);
-  
+
     --gradient-color: linear-gradient(90deg, var(--decor-color), var(--accent-color));
   }
 

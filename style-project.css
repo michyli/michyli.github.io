@@ -64,10 +64,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 0.3s ease;
+color: rgb(41, 41, 41);
+}
+
+.project-tab.dark {
+    border: 2px solid rgb(255, 248, 240);
+    background-color: var(--secondary-color);
+    color: rgb(255, 248, 240);
 }
 
 .project-tab p {
-color: rgb(41, 41, 41);
 font-size: 1.2rem;
 }
 

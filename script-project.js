@@ -3,6 +3,24 @@
 === PROJECT PAGE ===
 ====================
 */
+/* Toggle Dark and Light Mode */
+const projnav = document.querySelectorAll('.project-tab');
+
+if (getMode && getMode === 'dark') {
+    projnav.forEach((tab) => tab.classList.add('dark'));
+}
+
+toggleBtn.addEventListener('click', function () {
+  projnav.forEach((tab) => tab.classList.toggle('dark'));
+  
+  if(!body.classList.contains('dark')){
+    return localStorage.setItem('theme', 'light');
+  }
+  return localStorage.setItem('theme', 'dark');
+});
+
+
+
 /* Project Nav Bar */
 const mainproj_tab = document.querySelector(".main-project-tab");
 const sideproj_tab = document.querySelector(".side-project-tab");

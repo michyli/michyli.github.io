@@ -3,6 +3,26 @@
 === CONTACT PAGE ===
 ====================
 */
+/* Toggle Dark and Light Mode */
+const contact = document.querySelectorAll('.contact-inputs');
+
+if (getMode && getMode === 'dark') {
+    contact.forEach((box) => box.classList.add('dark'));
+}
+
+toggleBtn.addEventListener('click', function () {
+  contact.forEach((box) => box.classList.toggle('dark'));
+  
+  if(!body.classList.contains('dark')){
+    return localStorage.setItem('theme', 'light');
+  }
+  return localStorage.setItem('theme', 'dark');
+});
+
+
+/* Fetch total height of the window */
+document.body.style.cssText = "--total-height: " + $(document).height() + "px";
+console.log(body)
 /* Contact Form Submit Button*/
 let cntbtn = document.querySelector(".contact-button");
 let emailinput = document.querySelector(".email-input");

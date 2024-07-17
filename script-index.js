@@ -53,7 +53,7 @@ window.addEventListener('load', function(){
   const fancybutton1 = document.querySelector(".contactbtn");
   const fancybutton2 = document.querySelector(".resumebtn");
   const scroll_letter = document.querySelectorAll(".wavy-scroll span");
-  const downarrow = document.querySelector(".down-arrow-wrapper");
+  const downarrow = document.querySelector(".down-arrow");
 
   const starttime = 2000;
   /* Initialize svg letters */
@@ -115,7 +115,7 @@ window.addEventListener('load', function(){
   }, nexttime)
 
   /* "SCROLL" appears */
-  nexttime = nexttime + 2000;
+  nexttime = nexttime + 1500;
   setTimeout(function() {
     scroll_letter.forEach((span, i) => {
       scrollopacity(span, i);

@@ -24,6 +24,26 @@
   <body class="no-scroll" oncontextmenu="return false">
     <div class="cursor inner"></div>
     <div class="cursor outer"></div>
+
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
     <!-- Navigation Bar -->
     <section class="starting-page">
       <header>
@@ -51,7 +71,7 @@
         </div>
       </header>
 
-        <div class="ct-header container">    
+        <div class="ct-header container">   
             <div class="contact-container">
                 <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                     
@@ -61,9 +81,9 @@
                     </div>
                     <input type="hidden" name="access_key" value="2e5483ec-2cfb-4ca8-9b97-082ebabae275">
                     <input type="hidden" name="subject" value="New form received from Personal Website">
-                    <input type="text" name="name" placeholder="Your Full Name" class="contact-inputs hidden" required>
-                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs email-input hidden" required>
-                    <textarea name="message" placeholder="Leave a message!" class="contact-inputs hidden" required></textarea>
+                    <input type="text" name="name" placeholder="Your Full Name" class="contact-inputs hidden" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs email-input hidden" autocomplete="off" required>
+                    <textarea name="message" placeholder="Leave a message!" class="contact-inputs hidden" autocomplete="off" required></textarea>
                     <button type="submit" class="contact-button hidden">
                         <span>Submit</span>
                         <div class="success">
