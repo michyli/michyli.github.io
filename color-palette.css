@@ -16,7 +16,7 @@
   }
 
   body.dark {
-    --primary-color: rgb(30, 30, 36);
+    --primary-color: rgb(31, 32, 30);
     --secondary-color: rgb(52, 51, 50);
     --tertiary-color: rgb(32, 34, 28);
     --quaternary-color: rgb(42, 45, 38);
