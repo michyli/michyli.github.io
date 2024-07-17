@@ -10,6 +10,7 @@
     --light-color: rgb(255, 248, 240);
     --decor-value: 231, 152, 136;
     --dark-rgb-value: 41, 41, 41;
+    --boxshadow-dark: rgb(21, 21, 21);
   
     --gradient-color: linear-gradient(90deg, var(--decor-color), var(--accent-color));
   }
@@ -26,4 +27,5 @@
     --light-color: rgb(41, 41, 41);
     --decor-value: 231, 152, 136;
     --dark-rgb-value: 255, 248, 240;
+    --boxshadow-dark: rgb(255, 248, 240);
   }

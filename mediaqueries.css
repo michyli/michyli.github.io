@@ -1,15 +1,31 @@
 /*
+==============
+=== CURSOR ===
+==============
+*/
+@media (width <= 768px) {
+  input, textarea, button, select, a, div {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body, body button, body a {
+    cursor: auto;
+  }
+  .cursor {
+    visibility: hidden;
+  }
+}
+/*
 ===============
 === NAV BAR ===
 ===============
 */
-@media (800px <= width <= 1100px) {
+@media (768px <= width <= 1100px) {
   nav li a:before {
     width: 40px;
   }
 }
 
-@media (600px <= width <= 800px) {
+@media (600px <= width <= 768px) {
   nav ul li a {
     font-size: 11px;
   }
@@ -41,7 +57,7 @@
 === FANCY BUTTON ===
 ====================
 */
-@media (width <= 800px) {
+@media (width <= 768px) {
   .prof-btn1, .prof-btn2, .button-shadow {
     transform: scale(0.8);
   }
@@ -95,30 +111,67 @@
 === PROFILE SECTION ===
 =======================
 */
-@media (800px <= width <= 1100px) {
+@media (768px <= width <= 1100px) {
   .profile-text1, .profile-text2 {
-    font-size: 0.85em;
+  font-size: 0.85em;
+  }
+  .profile-text-container {
+  padding-bottom: 20px;
   }
   .profile-title {
-    font-size: 6em;
+  scale: 0.85;
+  }
+  .profile-spacer-div1 {
+  height: 5px;
+  }
+  .profile-spacer-div2 {
+  height: 15px;
   }
 }
 
-@media (width <= 800px) {
+@media (width <= 768px) {
   .profile-text1, .profile-text2 {
-    font-size: 0.75em;
+  font-size: 0.75em;
+  }
+  .profile-text-container {
+  padding-bottom: 10px;
   }
   .profile-title {
-    font-size: 12vw;
+  scale: 0.7;
+  }
+  .profile-spacer-div1 {
+  height: 0;
+  }
+  .profile-spacer-div2 {
+  height: 0;
   }
 }
+
+@media (width <= 570px) {
+  .profile-text1, .profile-text2 {
+  font-size: 0.7em;
+  }
+  .profile-text-container {
+  padding-bottom: 10px;
+  }
+  .profile-title {
+  scale: 0.55;
+  }
+  .profile-spacer-div1 {
+  height: 0;
+  }
+  .profile-spacer-div2 {
+  height: 0;
+  }
+}
+
 
 /*
 ====================================
 === ABOUT ME SECTION (HOME PAGE) ===
 ====================================
 */
-@media (800px <= width <= 1100px) {
+@media (768px <= width <= 1100px) {
     .about-me-page {
       height: auto;
     }
@@ -148,7 +201,7 @@
     }
 }
 
-@media (width <= 800px) {
+@media (width <= 768px) {
     .about-me-page {
       height: auto;
     }
@@ -160,7 +213,7 @@
       width: 80%;
     }
     .title-text {
-      font-size: 25px;
+      font-size: 28px;
       text-align: center;
     }
     .body-text {
@@ -184,7 +237,7 @@
 ===============================
 */
 
-@media screen and (800px <= width <= 1100px) {
+@media screen and (768px <= width <= 1100px) {
   .we-header {
     flex-direction: column-reverse;
   }
@@ -227,7 +280,7 @@
   }
 }
 
-@media(width <= 800px){
+@media(width <= 768px){
   .we-header {
     flex-direction: column-reverse;
   }
@@ -304,7 +357,7 @@
 === ABOUT ME PAGE ===
 =====================
 */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .about-text-container {
     width: 80%;
   }
@@ -325,7 +378,7 @@
 === PROJECTS PAGE ===
 =====================
 */
-@media (width <= 800px) {
+@media (width <= 768px) {
   .navbar-background {
     flex-direction: column;
     height: 140px;
